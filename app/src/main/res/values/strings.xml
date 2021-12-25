@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LikeTelegramUploadFileChat</string>
+    <string name="hint_message">Сообщение</string>
 </resources>
