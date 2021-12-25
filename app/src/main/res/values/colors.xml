@@ -9,8 +9,13 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="transparent">#00000000</color>
+    <color name="black_light">#212121</color>
+    <color name="outer_space">#404F56</color>
     <color name="grey_light">#03000000</color>
     <color name="grey_ultra_light">#0D000000</color>
     <color name="grey">#66000000</color>
     <color name="telegram">#449DE1</color>
+
+
+    <color name="nav_ic">@color/outer_space</color>
 </resources>

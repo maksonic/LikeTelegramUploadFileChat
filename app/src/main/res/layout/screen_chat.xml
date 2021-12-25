@@ -1,52 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
 
-    <View
+    <com.maksonic.liketelegramuploadfilechat.ChatToolbar
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/grey_ultra_light"
-        app:layout_constraintBottom_toTopOf="@+id/messageLayout" />
+        android:layout_height="?attr/actionBarSize" />
 
-    <LinearLayout
-        android:id="@+id/messageLayout"
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginStart="@dimen/padding_16"
-        android:layout_marginEnd="@dimen/padding_16"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent">
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
-        <ImageView
-            style="@style/Btn.Icon.Theme.LikeTelegramUploadFileChat"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
-            app:srcCompat="@drawable/ic_gif" />
-
-        <EditText
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="@dimen/padding_8"
-            android:layout_marginEnd="@dimen/padding_8"
-            android:layout_weight="1"
-            android:textCursorDrawable="@drawable/cursor"
-            android:background="@color/transparent"
-            android:hint="@string/hint_message" />
-
-        <ImageView
-            style="@style/Btn.Icon.Theme.LikeTelegramUploadFileChat"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
-            android:layout_marginEnd="@dimen/padding_16"
-            app:srcCompat="@drawable/ic_clip" />
-
-        <ImageView
-            style="@style/Btn.Icon.Theme.LikeTelegramUploadFileChat"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
-            app:srcCompat="@drawable/ic_voice" />
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.maksonic.liketelegramuploadfilechat.MessagePanelView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

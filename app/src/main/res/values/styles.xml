@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="Btn.NavIcon.Theme.LikeTelegramUploadFileChat" parent="Widget.AppCompat.ImageButton">
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="tint">@color/nav_ic</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
     <style name="Btn.Icon.Theme.LikeTelegramUploadFileChat" parent="Widget.AppCompat.ImageButton">
         <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
         <item name="android:focusable">true</item>
