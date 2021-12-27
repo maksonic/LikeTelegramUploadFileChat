@@ -14,8 +14,11 @@
     <color name="grey_light">#03000000</color>
     <color name="grey_ultra_light">#0D000000</color>
     <color name="grey">#66000000</color>
-    <color name="telegram">#449DE1</color>
-
+    <color name="telegram">#3DA0F9</color>
+    <color name="telegram_light">#38B8F1</color>
+    <color name="green_day">#63C055</color>
+    <color name="yellow_sun">#F4BE52</color>
+    <color name="red_light">#F25F65</color>
 
     <color name="nav_ic">@color/outer_space</color>
 </resources>

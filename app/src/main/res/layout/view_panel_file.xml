@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/files_panel_height"
+    android:fitsSystemWindows="true"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/gallery"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/padding_8"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/galleryIcon"
+                android:layout_width="@dimen/ic_file_panel_size"
+                android:layout_height="@dimen/ic_file_panel_size"
+                android:layout_marginBottom="@dimen/padding_4"
+                app:srcCompat="@drawable/item_gallery" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/galleryTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/panel_item_gallery"
+                android:textColor="@drawable/text_gallery" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/file"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/filesIcon"
+                android:layout_width="@dimen/ic_file_panel_size"
+                android:layout_height="@dimen/ic_file_panel_size"
+                android:layout_marginBottom="@dimen/padding_4"
+                app:srcCompat="@drawable/item_file" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/filesTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/panel_item_file"
+                android:textColor="@drawable/text_file" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/location"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/ic_file_panel_size"
+                android:layout_height="@dimen/ic_file_panel_size"
+                android:layout_marginBottom="@dimen/padding_4"
+
+                app:srcCompat="@drawable/item_location" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+
+                android:text="@string/panel_item_location"
+                android:textColor="@drawable/text_location" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contact"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/ic_file_panel_size"
+                android:layout_height="@dimen/ic_file_panel_size"
+                android:layout_marginBottom="@dimen/padding_4"
+                app:srcCompat="@drawable/item_contact" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/panel_item_contact"
+                android:textColor="@drawable/text_contact" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/music"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/padding_8"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/ic_file_panel_size"
+                android:layout_height="@dimen/ic_file_panel_size"
+                android:layout_marginBottom="@dimen/padding_4"
+                app:srcCompat="@drawable/item_music" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/panel_item_music"
+                android:textColor="@drawable/text_music" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

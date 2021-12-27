@@ -6,6 +6,22 @@
 
     <fragment
         android:id="@+id/chatScreen"
-        android:name="com.maksonic.liketelegramuploadfilechat.ChatScreen"
-        android:label="ChatScreen" />
+        android:name="com.maksonic.liketelegramuploadfilechat.presentation.screen.chat.ChatScreen"
+        android:label="ChatScreen">
+
+        <action
+            android:id="@+id/action_chatScreen_to_filesBottomSheet"
+            app:destination="@id/filesBottomSheet" />
+    </fragment>
+    <dialog
+        android:id="@+id/filesBottomSheet"
+        android:name="com.maksonic.liketelegramuploadfilechat.presentation.screen.files_sheet.FilesBottomSheet"
+        android:label="FilesBottomSheet">
+
+        <action
+            android:id="@+id/action_filesBottomSheet_to_chatScreen"
+            app:destination="@id/chatScreen"
+            app:popUpTo="@id/chatScreen"
+            app:popUpToInclusive="true"/>
+    </dialog>
 </navigation>

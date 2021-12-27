@@ -1,4 +1,4 @@
-package com.maksonic.liketelegramuploadfilechat
+package com.maksonic.liketelegramuploadfilechat.presentation.view
 
 import android.content.Context
 import android.util.AttributeSet
